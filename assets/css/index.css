@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+	border: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html,
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+body {
+	background-color: #ff3cac;
+	background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+}
+
+div.panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+}
+
+div.panel div.input-field {
+	width: 100%;
+	max-width: 300px;
+}
+
+div.panel div.input-field input {
+	background-color: #fff;
+	border-radius: 10px;
+	color: #121212;
+	font-size: 14pt;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	height: 50px;
+}
+div.panel div.input-field input::-webkit-input-placeholder {
+	font-size: 10pt;
+	color: #333;
+}
+div.panel div.input-field input::-moz-placeholder {
+	font-size: 10pt;
+	color: #333;
+}
+div.panel div.input-field input:-ms-input-placeholder {
+	font-size: 10pt;
+	color: #333;
+}
+div.panel div.input-field input:-moz-placeholder {
+	font-size: 10pt;
+	color: #333;
+}
+
+div.panel div.infos {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+div.panel div.infos div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #121212;
+	border-bottom: 2px solid #00bf90ff;
+	border-radius: 10px;
+	margin-top: 20px;
+	width: calc(100% / 7 - 10px);
+	height: 70px;
+}
+div.panel div.infos div p {
+	color: #00bf90;
+	font-size: 14pt;
+}
+div.panel div.infos div p:nth-child(2) {
+	color: #fff;
+	font-size: 10pt;
+}
+
+@media (max-width: 519.98px) {
+	div.panel div.infos {
+		flex-direction: column;
+	}
+	div.panel div.infos div {
+		width: 85%;
+	}
+	div.panel div.input-field input::-webkit-input-placeholder {
+		font-size: 8pt;
+	}
+	div.panel div.input-field input::-moz-placeholder {
+		font-size: 8pt;
+	}
+	div.panel div.input-field input:-ms-input-placeholder {
+		font-size: 8pt;
+	}
+	div.panel div.input-field input:-moz-placeholder {
+		font-size: 8pt;
+	}
+}
+
+@media (min-width: 520px) and (max-width: 767.98px) {
+	html,
+	body {
+		height: 100%;
+	}
+	div.panel div.infos div {
+		width: 45%;
+	}
+}
+
+@media (min-width: 768px) {
+	html,
+	body {
+		height: 100%;
+	}
+	div.panel div.infos div {
+		width: calc(100% / 3 - 10px);
+	}
+}
